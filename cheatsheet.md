@@ -3,59 +3,68 @@ Il contient quelques indices pour remplir les fichier html, css, etc pour que vo
 # CONTENU CV
 
 Diviser votre CV en plusieurs sections, faites au moins un commit par section (avec un titre de message comme "Ajoute ma formation")
+
 ## Information personnelle
 
 - Ajouter des éléments sur votre nom, prénom
-- vous pouvez ajouter un lien avec votre email 
-    ```html 
-    <a href="mailto:monemail@estia.fr">monemail@estia.fr</a>
-    ```
+- vous pouvez ajouter un lien avec votre email
+  ```html
+  <a href="mailto:monemail@estia.fr">monemail@estia.fr</a>
+  ```
 - vous pouvez ajouter votre numéro de téléphone
-    ```html 
-    <a href="tel:+330605040302">06 05 04 03 02</a>
-    ```
+  ```html
+  <a href="tel:+330605040302">06 05 04 03 02</a>
+  ```
 - Ajouter votre photo de profil
-    ```html
-    <img src="monimage.jpg" alt="Photo de profil de X">
-    ```
-    N'oublier pas d'ajouter *monimage.jpg* au projet
+  ```html
+  <img src="monimage.jpg" alt="Photo de profil de X" />
+  ```
+  N'oublier pas d'ajouter _monimage.jpg_ au projet
 - Ajouter votre adresse postale
-    ```html
-    <p>Mon adresse</p>
-    ```
+  ```html
+  <p>Mon adresse</p>
+  ```
 
 ## Formation / Education
+
 Ajouter une liste avec vos formations
+
 ```html
 <ul>
-    <li> <span> Formation 1 </span> <span> 2019-2020 </span> </li>
-    <li> <span> Formation 2 </span> <span> 2018-2019 </span> </li>
-    <li> <span> Formation 3 </span> <span> 2017-2018 </span> </li>
+  <li><span> Formation 1 </span> <span> 2019-2020 </span></li>
+  <li><span> Formation 2 </span> <span> 2018-2019 </span></li>
+  <li><span> Formation 3 </span> <span> 2017-2018 </span></li>
 </ul>
 ```
+
 ## Experience
+
 Ajouter une liste avec vos expériences professionnelles
+
 ```html
 <ul>
-    <li> <span> Experience 1 </span> <span> 2019-2020 </span> </li>
-    <li> <span> Experience 2 </span> <span> 2018-2019 </span> </li>
-    <li> <span> Experience 3 </span> <span> 2017-2018 </span> </li>
+  <li><span> Experience 1 </span> <span> 2019-2020 </span></li>
+  <li><span> Experience 2 </span> <span> 2018-2019 </span></li>
+  <li><span> Experience 3 </span> <span> 2017-2018 </span></li>
 </ul>
 ```
+
 ## Etc
 
-# HTML : Structure du document 
+# HTML : Structure du document
 
 ## Insérer un fichier CSS
 
 ```html
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css" />
 ```
+
 ## Insérer une image
 
 ```html
-<img src="img/monimage.jpg" alt="Description de l'image">
+<img src="img/monimage.jpg" alt="Description de l'image" />
 ```
+
 ## Insérer un lien
 
 ```html
@@ -63,7 +72,7 @@ Ajouter une liste avec vos expériences professionnelles
 ```
 
 ## Créer une section
-    
+
     ```html
     <section>
         <h2>Titre de la section</h2>
@@ -72,7 +81,7 @@ Ajouter une liste avec vos expériences professionnelles
     ```
 
 ## Créer une liste
-    
+
     ```html
     <ul>
         <li>Element 1</li>
@@ -81,25 +90,23 @@ Ajouter une liste avec vos expériences professionnelles
     </ul>
     ```
 
-## Ajouter une classe 
-    
+## Ajouter une classe
+
         ```html
         <section>
             <h2>Titre de la section</h2>
             <p class="Highlight">Contenu de la section</p>
         </section>
         ```
+
 ## Ajouter un id
-    
-        ```html 
+
+        ```html
         <section id="Focus">
             <h2>Titre de la section</h2>
             <p>Contenu de la section</p>
         </section>
         ```
-
-
-
 
 # PROJET
 
@@ -115,22 +122,24 @@ Vous pouvez structurez votre projet comme suit
     └── monimage.jpg
 ```
 
-# CSS 
+# CSS
+
 ## Selectionner des éléments
+
 ### Selectionner tous les éléments d'un type
 
 ```css
 p {
-    /* style */
+  /* style */
 }
-``` 
+```
 
 ### Selectionner un élément par son id
 
 ```css
 #Focus {
-    /* style */
-    border: 1px solid #ff0000;
+  /* style */
+  border: 1px solid #ff0000;
 }
 ```
 
@@ -138,9 +147,9 @@ p {
 
 ```css
 .Highlight {
-    /* style */
-    background-color: #ffff00;
-    font-weight: bold;
+  /* style */
+  background-color: #ffff00;
+  font-weight: bold;
 }
 ```
 
@@ -148,11 +157,11 @@ p {
 
 ```css
 span:first-child {
-    /* style du premier span d'un élément, par exemple le nom de la formation  */
+  /* style du premier span d'un élément, par exemple le nom de la formation  */
 }
 
 span:last-child {
-    /* style du dernier span d'un élément, par exemple la date dans la éléments de la liste formation */
+  /* style du dernier span d'un élément, par exemple la date dans la éléments de la liste formation */
 }
 ```
 
@@ -162,7 +171,7 @@ span:last-child {
 
 ```css
 body {
-    background-color: #000000;
+  background-color: #000000;
 }
 ```
 
@@ -170,7 +179,7 @@ body {
 
 ```css
 p {
-    color: #ffffff;
+  color: #ffffff;
 }
 ```
 
@@ -178,7 +187,7 @@ p {
 
 ```css
 p {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 ```
 
@@ -186,6 +195,6 @@ p {
 
 ```css
 p {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 ```
